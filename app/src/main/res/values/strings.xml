@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Consultor De Filmes</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detalhes_filme">DetalhesFilme</string>
+
+    <string name="titulo">Título</string>
+    <string name="txt_titulo">Wreck-It Ralph</string>
+    <string name="lancamento">Lançamento</string>
+    <string name="txt_lancamento">02 Nov 2012</string>
+    <string name="duracao">Duração</string>
+    <string name="txt_duracao">101 min</string>
+    <string name="diretor">Diretor</string>
+    <string name="txt_diretor">Rich Moore</string>
+    <string name="genero">Gênero</string>
+    <string name="txt_genero">Animation, Adventure, Comedy</string>
+    <string name="escritores">Escritor(es)</string>
+    <string name="txt_escritor">Rich Moore (story), Phil Johnston (story), Jim Reardon (story), Phil Johnston (screenplay), Jennifer Lee (screenplay), John C. Reilly (additional story material)</string>
+    <string name="atores">Atores</string>
+    <string name="txt_atores">John C. Reilly, Sarah Silverman, Jack McBrayer, Jane Lynch</string>
+    <string name="sinopse">Sinopse</string>
+    <string name="txt_sinopse">"Wreck-It Ralph longs to be as beloved as his game's perfect Good Guy, Fix-It Felix. Problem is, nobody loves a Bad Guy. But they do love heroes... so when a modern, first-person shooter game arrives featuring tough-as-nails Sergeant Calhoun, Ralph sees it as his ticket to heroism and happiness. He sneaks into the game with a simple plan -- win a medal -- but soon wrecks everything, and accidentally unleashes a deadly enemy that threatens every game in the arcade. Ralph's only hope? Vanellope von Schweetz, a young troublemaking \"glitch\" from a candy-coated cart racing game who might just be the one to teach Ralph what it means to be a Good Guy. But will he realize he is good enough to become a hero before it's \"Game Over\" for the entire arcade?"</string>
+
+
+
+</resources>

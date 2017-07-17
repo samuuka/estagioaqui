@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main.appbar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main_collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary">
+            <ImageView
+                android:id="@+id/detalhes_imagem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                android:transitionName="poster"
+                app:layout_collapseMode="parallax" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_gravity="bottom"
+                android:layout_alignBottom="@+id/detalhes_imagem"
+                android:background="@drawable/photo_background_protection"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.GridLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            app:useDefaultMargins="true"
+            android:layout_height="match_parent"
+            app:columnCount="2">
+            <TextView
+                app:layout_column="0"
+                app:layout_row="0"
+                android:text="@string/titulo"
+                style="@style/left_column_bold" />
+            <TextView
+                style="@style/right_column_normal"
+                app:layout_column="1"
+                app:layout_row="0"
+                tools:text="@string/txt_titulo"
+                android:id="@+id/detalhes_titulo" />
+            <TextView
+                style="@style/left_column_bold"
+                app:layout_column="0"
+                app:layout_row="1"
+                android:text="@string/lancamento" />
+            <TextView
+                style="@style/right_column_normal"
+                app:layout_column="1"
+                app:layout_row="1"
+                tools:text="@string/txt_lancamento"
+                android:id="@+id/detalhes_lancamento" />
+            <TextView
+                style="@style/left_column_bold"
+                android:text="@string/duracao"
+                app:layout_column="0"
+                app:layout_row="2" />
+            <TextView
+                style="@style/right_column_normal"
+                tools:text="@string/txt_duracao"
+                app:layout_column="1"
+                app:layout_row="2"
+                android:id="@+id/detalhes_duracao" />
+            <TextView
+                android:text="@string/diretor"
+                app:layout_column="0"
+                app:layout_row="3"
+                style="@style/left_column_bold" />
+            <TextView
+                style="@style/right_column_normal"
+                tools:text="@string/txt_diretor"
+                app:layout_column="1"
+                app:layout_row="3"
+                android:id="@+id/detalhes_diretor" />
+            <TextView
+                style="@style/left_column_bold"
+                app:layout_column="0"
+                app:layout_row="4"
+                android:text="@string/genero" />
+            <TextView
+                style="@style/right_column_normal"
+                app:layout_column="1"
+                app:layout_row="4"
+                tools:text="@string/txt_genero"
+                android:id="@+id/detalhes_genero" />
+            <TextView
+                style="@style/left_column_bold"
+                android:text="@string/escritores"
+                app:layout_column="0"
+                app:layout_row="5" />
+            <TextView
+                style="@style/right_column_normal"
+                app:layout_column="1"
+                app:layout_row="5"
+                android:layout_width="0dp"
+                tools:text="@string/txt_escritor"
+                android:id="@+id/detalhes_escritores" />
+            <TextView
+                style="@style/left_column_bold"
+                android:text="@string/atores"
+                app:layout_column="0"
+                app:layout_row="6" />
+            <TextView
+                style="@style/right_column_normal"
+                app:layout_column="1"
+                app:layout_row="6"
+                tools:text="@string/txt_atores"
+                android:id="@+id/detalhes_atores" />
+            <TextView
+                app:layout_column="0"
+                app:layout_row="7"
+                style="@style/left_column_bold"
+                android:text="@string/sinopse" />
+            <TextView
+                app:layout_column="1"
+                app:layout_row="7"
+                tools:text="@string/txt_sinopse"
+                style="@style/right_column_normal"
+                android:id="@+id/detalhes_sinopse"/>
+        </android.support.v7.widget.GridLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
